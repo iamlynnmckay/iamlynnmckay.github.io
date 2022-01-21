@@ -20,9 +20,9 @@
 
 # Build settings
 #@@@TODO
-##remote_theme: iamlynnmkcay/jekyll-theme-iamlynnmckay@v0.1.0
-##plugins:
-##  - jekyll-remote-theme
+remote_theme: iamlynnmckay/jekyll-theme-iamlynnmckay
+plugins:
+  - jekyll-remote-theme
 ##theme: "jekyll-theme-iamlynnmckay"
 theme: "minima"
 #plugins:
