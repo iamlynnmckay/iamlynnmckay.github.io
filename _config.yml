@@ -23,24 +23,25 @@
 remote_theme: iamlynnmckay/jekyll-theme-iamlynnmckay
 plugins:
   - jekyll-remote-theme
-##theme: "jekyll-theme-iamlynnmckay"
-theme: "minima"
-#plugins:
-#  - jekyll-feed
 
-# config
+# jekyll-theme-iamlynnmckay
+show_coming_soon: true
 show_email: false
-show_excepts: false
+show_excerpts: true
 show_tags: true
 show_header: true
-show_footer: false
-show_links_on_homepage: false
+show_footer: true
+show_categories: true
+show_homepage_links: true
+homepage_links:
+# @TODO
 show_links_in_header: false
 show_posts: true
 
+theme: jekyll-theme-iamlynnmckay
 
 # minima
-email: 
+email: iamlynnmckay@gmail.com
 baseurl: "" 
 twitter_username: iamlynnmckay
 github_username:  iamlynnmckay
@@ -49,7 +50,7 @@ github_username:  iamlynnmckay
 author: "Lynn McKay"
 url: "https://iamlynnmckay.com"
 title: "@iamlynnmckay"
-description: "Lynn's blog about things and stuff."
+description: "Lynn's things and stuff."
 twitter:
   username: "iamlynnmckay"
   card: "site.twitter.card"
