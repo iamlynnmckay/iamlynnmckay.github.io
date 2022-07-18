@@ -17,7 +17,8 @@ homepage_links:
 show_links_in_header: false
 show_posts: true
 
-theme: jekyll-theme-iamlynnmckay
+# @TODO: uncomment for local preview
+# theme: jekyll-theme-iamlynnmckay
 
 # minima
 email: iamlynnmckay@gmail.com
