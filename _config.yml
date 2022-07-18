@@ -62,7 +62,6 @@ exclude:
   - Gemfile.lock
   - Makefile
   - README.md
-  - _test/
   - gemfiles/
   - netlify.toml
   - node_modules/
