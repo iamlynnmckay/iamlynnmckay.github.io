@@ -5,8 +5,8 @@ permalink: /
 
 <br/>
 
-## [linktr.ee/iamlynnmckay](https://linktr.ee/iamlynnmckay)
+## > [linktr.ee/iamlynnmckay](https://linktr.ee/iamlynnmckay)
 
 ---
 
-### more coming soon...
+> [start here...](./public)
