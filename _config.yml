@@ -36,10 +36,6 @@ twitter:
   card: "site.twitter.card"
 logo: "assets/images/logo.svg"
 
-# jekyll-scholar
-scholar:
-  style: apa
-
 # plugins
 plugins:
   - jekyll-remote-theme
@@ -48,11 +44,6 @@ plugins:
   - jekyll-sitemap
   # - jekyll-scholar
   # - jekyll-postcss
-
-include: 
-  - '_pages'
-  - 'assets/pages'
-  - 'assets/posts'
 
 # exclude
 exclude:
