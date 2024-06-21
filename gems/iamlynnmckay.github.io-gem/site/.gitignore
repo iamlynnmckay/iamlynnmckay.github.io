@@ -1,0 +1,30 @@
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# OS and Editor Files
+.DS_Store
+Thumbs.db
+
+# Build and Dependency Directories
+node_modules/
+vendor/
+
+# Logs and Temporary Files
+*.log
+*.tmp
+
+# Environment-specific Files
+.env
+
+# Ruby Generated Files
+*.gem
+.bundle
+pkg
+
+# Other Generated Files
+Gemfile.lock
+

@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+$custom-default-font-family: 'Lucinda Console', 'Courier New', Courier, monospace;
+$custom-monospace-font-family: 'Lucinda Console', 'Courier New', Courier, monospace;
+$custom-font-size: 13pt;
+$custom-font-weight: 100;
+
+/* General styles */
+
+
+img {
+    max-width: 100%;
+}
+
+/* Font styles */
+
+body {
+    font-family: $custom-default-font-family;
+    font-weight: $custom-font-weight;
+}
+
+h1 {
+    font-size:  calc($custom-font-size + 1.5pt);
+    font-weight: calc($custom-font-weight * 3);
+}
+
+h2 {
+    font-size:  calc($custom-font-size + 1.25pt);
+    font-weight: $custom-font-weight;
+}
+
+h3 {
+    font-size:  calc($custom-font-size + 1pt);
+    font-weight: $custom-font-weight;
+}
+
+h4 {
+    font-size:  calc($custom-font-size + 0.75pt);
+    font-weight: $custom-font-weight;
+}
+
+h5 {
+    font-size:  calc($custom-font-size + 0.50pt);
+    font-weight: $custom-font-weight;
+}
+
+h6 {
+    font-size: calc($custom-font-size + 0.25pt);
+    font-weight: $custom-font-weight;
+}
+
+
+p,
+ol,
+ul,
+li,
+a {
+    font-size: $custom-font-size;
+}
+
+span,
+span *,
+pre,
+code {
+    font-size: calc($custom-font-size - 1pt);
+    font-family: $custom-monospace-font-family;
+    color: var(--lowlight-color);
+}
+
+time {
+    font-size: calc($custom-font-size - 1pt);
+}
+
+p {
+    margin: 1%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+ul {
+    margin: 1%;
+}
+
+pre {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 2%;
+}
+
+/* Header styles */
+
+
+header {
+    nav {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        display: inline-block;
+        list-style: none;
+        padding-left: 0;
+    }
+
+
+    li::after {
+        content: ' ';
+    }
+
+    li {
+        display: inline-block;
+
+    a {
+        color: var(--highlight-color);
+        font-size: calc($custom-font-size + 2pt);
+    }
+
+    }
+
+    li::before {
+        content: '';
+    }
+
+
+}
+}
+
+/* Footer styles */
+footer {
+
+    display: flex;
+    justify-content: space-between;
+    a {
+        color: #666;
+        font-size: 5pt;
+        text-decoration: none;
+    }
+
+
+
+}
+
+
+/* Article header styles */
+
+article {
+
+    code, pre {
+        font-family: 'Courier New', Courier, monospace;
+    };
+
+    h1 {
+        counter-reset: h2;
+    }
+
+    h2:before {
+        content: counter(h2)" ";
+        counter-increment: h2;
+    }
+
+    h2 {
+        counter-reset: h3;
+    }
+
+    h3:before {
+        content: counter(h2)"." counter(h3)" ";
+        counter-increment: h3;
+    }
+
+    h3 {
+        counter-reset: h4;
+    }
+
+    h4:before {
+        content: counter(h2)"." counter(h3)"." counter(h4)" ";
+        counter-increment: h4;
+    }
+
+    h4 {
+        counter-reset: h5;
+    }
+
+    h5:before {
+        content: counter(h2)"." counter(h3)"." counter(h4)"." counter(h5)" ";
+        counter-increment: h5;
+    }
+
+    h5 {
+        counter-reset: h6;
+    }
+
+    h6:before {
+        content: counter(h2)"." counter(h3)"." counter(h4)"." counter(h5)"." counter(h6)" ";
+        counter-increment: h6;
+    }
+
+    h6 {
+        counter-reset: h7;
+    }
+
+}
+
+/* Styles for lists of tags of post */
+
+ul.tags {
+    margin-left:0;
+    display: inline;
+    li {
+        display: inline;
+    }
+    li::before {
+        content: '';
+        margin: 0;
+    }
+    li::after {
+        content: ' ';
+    }
+}
+
+/* Home styles */
+.home div:has(> img) {
+    height: 250px;
+    overflow: hidden;
+}
+
+div.the-tree-view {
+    font-family: $custom-monospace-font-family;
+    li::before {
+        content: '';
+    }
+    ul {
+        margin-left:0;
+    }
+}
+
+/* Debugging */
+/*.debug * { border: 1px dotted red !important; }*/
+
+.assets-layout {
+    font-family: $custom-monospace-font-family;
+    * { font-size: calc($custom-font-size - 5pt); }
+    ul {
+        margin-left:2%;
+        
+        li::before {
+            content: '└'
+        }
+        li:first-child::before {
+            content: '└'
+        }
+    }
+    li::before {
+        content: './';
+        
+    }
+}
+
+.pages-include {
+    li {
+        display: inline-block;
+    }
+    li::before {
+        content: '';
+    }
+    ul {
+        display: inline-block;
+    }
+}
+
+.error404 {
+    img {
+
+    width: 100%;
+    height: auto;
+    }
+    padding: 10%;
+
+}

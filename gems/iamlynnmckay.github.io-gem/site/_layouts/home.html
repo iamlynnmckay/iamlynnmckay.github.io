@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="home">
+
+    <div>
+
+        <img src="{{ "/banner.jpg" | relative_url }}"></img>
+    </div>
+
+    <p>{{ site.description }}</p>
+
+    <h2>links</h2>
+
+    <ul>
+        {% for link in site.links %}
+        <li>
+            <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <h2><a href="/pages">pages</a></h2>
+
+    {% include pages.html %}
+
+    <h2><a href="/posts">posts</a></h2>
+
+    {% include posts.html %}
+
+</div>

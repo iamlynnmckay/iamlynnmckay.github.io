@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'fileutils'
+require_relative '../lib/my/copier'
+
+# Define the source directory inside the gem
+source_dir = File.expand_path('../site', __dir__)
+
+# Define the destination directory (current working directory or user-specified path)
+destination_dir = ARGV.first || Dir.pwd
+
+# Create an instance of My::Copier and perform the copy
+copier = My::Copier.new(source_dir, destination_dir)
+copier.copy

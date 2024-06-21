@@ -1,0 +1,13 @@
+---
+
+# reek.yml
+
+exclude_paths:
+  - _site
+  - .bundle
+  - .jekyll-cache
+  - vendor
+  - .git
+  - example
+
+

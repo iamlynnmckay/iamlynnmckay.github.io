@@ -1,0 +1,52 @@
+# frozen_string_literal: true
+
+ruby '3.1.6'
+
+source 'https://rubygems.org'
+
+# Runtime dependencies
+
+gemspec
+
+# Development dependencies
+
+group :development do
+  gem 'bundler'
+  gem 'pry'
+end
+
+# Development and test dependencies
+
+group :development, :test do
+  gem 'base64'
+  gem 'bundler-audit'
+  gem 'fasterer'
+  gem 'rake'
+  gem 'reek'
+  gem 'rspec'
+  gem 'rubocop'
+  gem 'rubocop-jekyll'
+  gem 'rubocop-minitest'
+  gem 'rubocop-performance'
+  gem 'rubocop-rake'
+  gem 'rubocop-rspec'
+  gem 'standard'
+end
+
+# Platform-specific development dependencies
+
+group :development do
+  # Performance-booster for watching directories on Windows
+  gem 'wdm', platforms: %i[mingw x64_mingw mswin]
+end
+
+# Platform-specific runtime dependencies
+
+# Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem do not have a Java counterpart.
+gem 'http_parser.rb', platforms: [:jruby]
+
+group :development, :test do
+  # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem and associated library.
+  gem 'tzinfo', platforms: %i[mingw x64_mingw mswin jruby]
+  gem 'tzinfo-data', platforms: %i[mingw x64_mingw mswin jruby]
+end

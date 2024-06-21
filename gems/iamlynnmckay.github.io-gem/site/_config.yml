@@ -1,0 +1,101 @@
+title: "@iamlynnmckay"
+email: ""
+description: "lynn's things and stuff"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://iamlynnmckay.com/" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title
+  assets:
+    output: true
+    permalink: /:collection/:path
+
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Versions
+versions:
+  plugins:
+    asset_tag: '0.0.1'
+
+# Debugging
+debug: true
+
+# Content
+footer:
+  text: stasis in darkness
+  url: https://www.youtube.com/watch?v=mjnAE5go9dI
+
+#  Links
+links:
+  - title: github
+    url: https://github.com/iamlynnmckay/
+  - title: twitter
+    url: https://x.com/iamlynnmckay/
+  - title: instagram
+    url: https://www.instagram.com/iamlynnmckay/
+  # - title: soundcloud
+  #   url: https://soundcloud.com/iamlynnmckay/
+  # - title: mixcloud
+  #   url: https://www.mixcloud.com/iamlynnmckay/
+
+# Google Analytics
+google_analytics: G-V2K487YTMG
+
+# Styles
+style: dark
+listen_for_clients_preferred_style: true
+
+# Exclude from the build
+exclude:
+  - '**/Thumbs.db'
+  - '*.gem'
+  - '*.gemspec'
+  - '*.log'
+  - '.DS_Store'
+  - '.bundle/'
+  - '.env'
+  - '.gitignore'
+  - '.gitmodules'
+  - '.rbenv-vars'
+  - '.rbenv-version'
+  - '.reek.yml'
+  - '.ruby-gemset'
+  - '.ruby-version'
+  - 'bin/'
+  - 'lib/'
+  - 'rubocop.yml'
+  - .DS_Store
+  - .bundle/
+  - .env
+  - .git/
+  - .gitignore
+  - .idea/
+  - .jekyll-cache/
+  - .jekyll-metadata
+  - .sass-cache/
+  - .vscode/
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - Makefile
+  - README.md
+  - Rakefile
+  - _config.yml
+  - _plugins/
+  - gems/
+  - gemfiles/
+  - node_modules/
+  - tasks/
+  - tmp/
+  - vendor/

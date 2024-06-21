@@ -1,0 +1,26 @@
+{% assign tag = include.tag | default: nil %}
+{% if tag == nil %}
+{% assign posts = site.posts | sort: "date" | reverse %}
+{% else %}
+{% assign posts = site.posts | where: "tags", tag | sort: "date" | reverse %}
+{% endif %}
+
+<div class="posts-include">
+
+<ul>
+    {% for post in posts %}
+    <li>
+       <time>[ {{ post.date | date: "%Y-%m-%d" }} ]</time> ~
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> ~
+        <ul class="tags">
+            {% for tag in post.tags %}
+            <li>
+                <span><a href="/pages#{{ tag }}">#{{tag}}</a></span>
+            </li>
+            {% endfor %}
+    </li>
+</ul>
+{% endfor %}
+</ul>
+
+</div>

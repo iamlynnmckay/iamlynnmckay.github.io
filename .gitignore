@@ -1,0 +1,23 @@
+# Ignore everything
+*
+.*/
+
+# Allow specific files
+!LICENSE.txt
+!README.md
+!TODO.md
+!Gemfile
+!Makefile
+!.gitignore
+
+# Allow specific directories
+!_assets/
+!_posts/
+!.github/
+!gems/
+
+# Allow all files within these directories
+!_assets/**
+!_posts/**
+!.github/**
+!gems/**

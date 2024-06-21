@@ -1,0 +1,19 @@
+
+{% assign tags = "" | split: "" %}
+{% for post in site.posts %}
+{% assign tags = tags | concat: post.tags %}
+{% endfor %}
+
+<div class="pages-include">
+
+<ul>
+
+{% for tag in tags %}
+<li>
+    <span><a href="/{{ tag }}">#{{ tag }}</a></span>
+</li>
+{% endfor %}
+
+</ul>
+
+</div>

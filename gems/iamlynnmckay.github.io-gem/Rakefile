@@ -1,0 +1,6 @@
+# frozen_string_literal: true
+
+# Rakefile
+
+# Require Rake files that define tasks
+Dir.glob('tasks/*.rake').each { |file| load file }

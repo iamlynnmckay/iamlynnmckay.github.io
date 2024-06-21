@@ -1,0 +1,25 @@
+inherit_from: .rubocop_todo.yml
+
+
+require:
+  - 'rubocop-jekyll'
+  - 'rubocop-performance'
+  - 'rubocop-rspec'
+  - 'rubocop-minitest'
+  - 'rubocop-rake'
+
+AllCops:
+  Exclude:
+    - '_site/**/*'
+    - '.bundle/**/*'
+    - '.jekyll-cache/**/*'
+    - 'vendor/bundle/**/*'
+    - 'example/**/*'
+    - '.git/**/*'
+
+
+Layout/BlockAlignment:
+  Exclude:
+    - '*/**/*.rake'
+    - '*.gemspec'
+    - 'Rakefile'
