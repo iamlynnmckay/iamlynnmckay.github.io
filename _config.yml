@@ -5,3 +5,7 @@ remote_theme: iamlynnmckay/jekyll-theme-iamlynnmckay.github.io
 collections:
   pages:
     output: true
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
