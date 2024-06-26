@@ -1,0 +1,7 @@
+# uncomment to use the remote verson of the theme
+remote_theme: iamlynnmckay/jekyll-theme-iamlynnmckay.github.io
+# uncomment to use the locally installed version of the theme
+#theme: jekyll-theme-iamlynnmckay.github.io
+collections:
+  pages:
+    output: true

@@ -1,0 +1,26 @@
+# Site settings
+title: "@iamlynnmckay"
+email: ""
+description: lynn's things and stuff
+baseurl: ""
+url: "https://iamlynnmckay.com/"
+home_image: "/assets/images/home.jpg"
+links:
+  github:
+    username: iamlynnmckay
+  twitter:
+    username: iamlynnmckay
+  instagram:
+    username: iamlynnmckay
+  soundcloud:
+    username: iamlynnmckay
+  mixcloud:
+    username: iamlynnmckay
+google_analytics: G-V2K487YTMG
+style: dark
+listen_for_clients_preferred_style: true
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+footer: <a href="https://www.youtube.com/watch?v=mjnAE5go9dI">stasis in darkness</a>
