@@ -431,7 +431,7 @@ pre {
   --placeholder-color: var(--base-color);
   --link-color: var(--base-color);
   --highlight-color: deeppink;
-  --lowlight-color: lightgray;
+  --lowlight-color: gray;
   --code-color-1: #aaaaaa;
   --code-color-2: #ffffcc;
   --code-color-3: #F00000;
@@ -507,6 +507,7 @@ pre,
 code {
   font-size: 13pt;
   font-family: "Courier New", Courier, monospace;
+  color: var(--lowlight-color);
 }
 
 time {
@@ -538,6 +539,9 @@ header nav ul {
   display: inline-block;
   list-style: none;
   padding-left: 0;
+}
+header nav li::after {
+  content: " ";
 }
 header nav li {
   display: inline-block;
@@ -612,9 +616,6 @@ ul.tags {
 ul.tags li {
   display: inline;
 }
-ul.tags li a {
-  color: var(--lowlight-color);
-}
 ul.tags li::before {
   content: "";
   margin: 0;
@@ -658,6 +659,16 @@ div.the-tree-view ul {
 }
 .assets-layout li::before {
   content: "./";
+}
+
+.pages-include li {
+  display: inline-block;
+}
+.pages-include li::before {
+  content: "";
+}
+.pages-include ul {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */
