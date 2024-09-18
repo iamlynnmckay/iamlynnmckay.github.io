@@ -459,37 +459,37 @@ img {
 
 /* Font styles */
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Lucinda Console", "Courier New", Courier, monospace;
   font-weight: 100;
 }
 
 h1 {
-  font-size: 15.5pt;
+  font-size: 14.5pt;
   font-weight: 300;
 }
 
 h2 {
-  font-size: 15.25pt;
+  font-size: 14.25pt;
   font-weight: 100;
 }
 
 h3 {
-  font-size: 15pt;
+  font-size: 14pt;
   font-weight: 100;
 }
 
 h4 {
-  font-size: 14.75pt;
+  font-size: 13.75pt;
   font-weight: 100;
 }
 
 h5 {
-  font-size: 14.5pt;
+  font-size: 13.5pt;
   font-weight: 100;
 }
 
 h6 {
-  font-size: 14.25pt;
+  font-size: 13.25pt;
   font-weight: 100;
 }
 
@@ -498,20 +498,20 @@ ol,
 ul,
 li,
 a {
-  font-size: 14pt;
+  font-size: 13pt;
 }
 
 span,
 span *,
 pre,
 code {
-  font-size: 13pt;
-  font-family: "Courier New", Courier, monospace;
+  font-size: 12pt;
+  font-family: "Lucinda Console", "Courier New", Courier, monospace;
   color: var(--lowlight-color);
 }
 
 time {
-  font-size: 13pt;
+  font-size: 12pt;
 }
 
 p {
@@ -548,7 +548,7 @@ header nav li {
 }
 header nav li a {
   color: var(--highlight-color);
-  font-size: 16pt;
+  font-size: 15pt;
 }
 header nav li::before {
   content: "";
@@ -631,7 +631,7 @@ ul.tags li::after {
 }
 
 div.the-tree-view {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Lucinda Console", "Courier New", Courier, monospace;
 }
 div.the-tree-view li::before {
   content: "";
@@ -643,10 +643,10 @@ div.the-tree-view ul {
 /* Debugging */
 /*.debug * { border: 1px dotted red !important; }*/
 .assets-layout {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Lucinda Console", "Courier New", Courier, monospace;
 }
 .assets-layout * {
-  font-size: 9pt;
+  font-size: 8pt;
 }
 .assets-layout ul {
   margin-left: 2%;
@@ -669,6 +669,14 @@ div.the-tree-view ul {
 }
 .pages-include ul {
   display: inline-block;
+}
+
+.error404 {
+  padding: 10%;
+}
+.error404 img {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
